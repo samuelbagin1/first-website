@@ -1,0 +1,32 @@
+
+
+img{
+    cursor: pointer;
+}
+
+#lightbox{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25,25,25,0.9);
+    display: none;
+}
+
+#lightbox img{
+    height: 80%;
+    transition: .5s;
+}
+
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.active{
+    transition: opacity 0.5s linear;
+}
